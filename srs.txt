@@ -1,0 +1,32 @@
+Entities:
+1)student details-student_id,student_name,student_dob,deptno,date_of_joining
+
+2)department details-deptno,branch
+
+3)campus_selection-cmp_id,student_id,deptno,year_of_placement,
+
+4)acadamic status-student_id,no_of_backlogs,sem_id,sem_marks
+
+5) semmarks-sem_id,sem_name
+
+6)companies- cmp_id,cmp_name,backlogs_allowed,required_branches,package,eligibility_criteria
+
+
+1)Write a trigger to check the age by accepting the date of birth of a particular student. If age is greater than 18, then insert data into student table otherwise trigger should fire.
+
+2)write a query to accept student id as parameter display student_id,student_name,no_of_backlogs,status(selected or notselected)?
+
+3) write a query to display number of students got placed during campus on year wise
+
+4) core
+
+5)write a pl sql block to display the percentage of selections on yearly basis for all departments
+
+6)write a query to get the details of eligible candidates for placement drive based on no of backlogs allowed?
+
+7) display the student names and the no of companies they are eligible for.
+
+8) write a procedure to list the semwise marks for the student and their aggregate. student id should be taken from the user?
+
+9) write a trigger to prompt password while performing dml operations on student table?
+
