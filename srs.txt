@@ -26,7 +26,7 @@ Entities:
 
 7) display the student names and the no of companies they are eligible for.
 
-8) write a procedure to list the semwise marks for the student and their aggregate. student id should be taken from the user?
+8) write a procedure to list the semwise marks for the student and their aggregate and grade. student id should be taken from the user?
 
 9) write a trigger to prompt password while performing dml operations on student table?
 
