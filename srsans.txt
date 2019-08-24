@@ -16,3 +16,32 @@ END IF;
 --dbms_output.put_line('student_id:   '||v_data.student_id ||'   student_name: '|| v_data.student_name||'   no_of_backlogs '||v_data.backlogs ||'STATUS:' || STATUS);
 dbms_output.put_line('student_id:   '||stu_id ||'   student_name: '|| stu_name ||'   backlogs: ' || backlogs||'   STATUS: ' || STATUS) ;
 end;
+
+
+
+
+DISPLAY ELIGBILE STUDENTS BASED ON COMPANY;
+DECLARE
+CURSOR C1 IS select s.student_id,s.student_name,b.dept_name,sum(a.sem_marks) marks 
+from student_details s join branch_details b on (s.dept_id=b.dept_id) join acadamic_status a on(s.student_id=a.student_id)
+  group by s.student_id,s.student_name,b.dept_name;
+v_data c1%rowtype;
+v_agg number;
+v_eligibility number;
+v_branches varchar2(30);
+--where INSTR(B.DEPT_NAME,'ECE')>0
+x number;
+begin
+select  ELIGIBILITY,BRANCHES_ALLWD   into v_eligibility,v_branches from companies where cmp_name='CALIBAR';
+open c1;
+loop 
+fetch c1 into v_data;
+exit when c1%notfound;
+v_agg:=round((v_data.marks/6000)*100);
+x:=INSTR(V_BRANCHES,v_data.dept_name) ;
+--dbms_output.put_line('the x is ' || x);
+if(v_agg>=v_eligibility AND  X>0  ) then
+dbms_output.put_line(v_data.student_id || '  ' ||v_data.student_name || ' ' ||  v_data.dept_name || ' ' || v_data.marks ||' '||v_agg || v_branches) ;
+end if;
+end loop;
+end;
