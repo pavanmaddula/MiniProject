@@ -22,7 +22,7 @@ Entities:
 
 5)write a pl sql block to display the percentage of selections on yearly basis for all departments
 
-6)write a query to get the details of eligible candidates for placement drive based on no of backlogs allowed?
+6)write a query to get the details of eligible candidates for placement drive based on no of backlogs allowed for a particular company.
 
 7) display the student names and the no of companies they are eligible for.
 
