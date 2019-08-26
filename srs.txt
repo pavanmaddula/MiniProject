@@ -22,5 +22,6 @@ Entities:
 
 5) write a procedure to list the semwise marks for the student and their aggregate and grade. student id should be taken from the user?
 
+6) write a procedure that gives the number of companies which are recruiting a particular branch students.
 
-
+7) write a function to display the student name who has placed in more number of companies.
