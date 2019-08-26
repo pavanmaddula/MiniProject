@@ -18,13 +18,7 @@ Entities:
 
 3) write a query to display number of students got placed during campus on year wise
 
-
-
-
-
 4)write a query to get the details of eligible candidates for placement drive based on no of backlogs allowed for a particular company.
-
-
 
 5) write a procedure to list the semwise marks for the student and their aggregate and grade. student id should be taken from the user?
 
